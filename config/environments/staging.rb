@@ -111,5 +111,5 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
   config.secret_key_base = Rails.application.credentials[:secret_key_base]
-  config.hosts << "createRailsApp.redpanda.be"
+  config.hosts << "createrailsapp.redpanda.be"
 end
