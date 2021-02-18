@@ -2,6 +2,7 @@
   "name": "createrailsapp",
   "private": true,
   "scripts": {
+    "postinstall": "husky install",
     "lint": "bundle exec rubocop -P"
   },
   "dependencies": {
