@@ -8,6 +8,13 @@
   <body>
     <h3>ready to develop</h3>
 
+    <h4>Non db model examples</h4>
+    <ul>
+      <li>Example 1 type: <%= @example1.example_type.name %></li>
+      <li>Example 2 type: <%= @example2.example_type.name %></li>
+      <li>Example 3 type: <%= @example3.example_type.name %></li>
+    </ul>
+
     <h4>Active Model Forms</h4>
     <%= form_for @form, url: form_target_path do |f| %>
       <div class="form-group">

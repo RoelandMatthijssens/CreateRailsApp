@@ -26,3 +26,5 @@
   * A modular component to create separate form objects that act and can be validated as normal Active Record models. 
   An example is included to show that the form has its own validation. If a letter or number is passed in the wrong field,
   it will not be passed through the validation check in the controller.
+* Non DB Model
+  * A modular component that allows the creation of models that behave like database / Active Record models without being saved to the database.  The non DB models have the advantage over other functionalities like `Enum` that it allows you to define additional methods on class itself. Use case is illustrated with an `ExampleType` class, that takes an identifier in snake case. In this case, the name method allows us to change the view display within the class by defining the `name` method.
