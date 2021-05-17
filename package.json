@@ -2,7 +2,7 @@
   "name": "createrailsapp",
   "private": true,
   "scripts": {
-    "postinstall": "husky install",
+    "postinstall": "husky-run install",
     "lint": "bundle exec rubocop -P"
   },
   "dependencies": {
@@ -10,6 +10,7 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
+    "husky": "^4.3.8",
     "turbolinks": "^5.2.0"
   },
   "husky": {
@@ -19,7 +20,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "husky": "^4.2.5",
+    "husky": "^4.3.8",
     "webpack-dev-server": "^3.11.0"
   }
 }
