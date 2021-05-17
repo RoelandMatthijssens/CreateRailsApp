@@ -9,7 +9,7 @@ orbs:
 jobs:
   test:
     docker:
-      - image: cimg/ruby:2.7-node
+      - image: cimg/ruby:2.7.1-node
       - image: circleci/postgres:9.5-alpine
         environment:
           POSTGRES_USER: createrailsapp
@@ -40,7 +40,7 @@ jobs:
           command: bundle exec rspec
   deploy:
     docker:
-      - image: cimg/ruby:2.7-node
+      - image: cimg/ruby:2.7.1-node
     steps:
       - checkout
       - run: sudo apt update && sudo apt install zlib1g-dev libsqlite3-dev

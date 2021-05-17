@@ -19,3 +19,10 @@
 * configure dns
 * run `cap staging deploy`
 * run `cap staging puma:start`
+
+## Included features
+
+* Active Model Form
+  * A modular component to create separate form objects that act and can be validated as normal Active Record models. 
+  An example is included to show that the form has its own validation. If a letter or number is passed in the wrong field,
+  it will not be passed through the validation check in the controller.
