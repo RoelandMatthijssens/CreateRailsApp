@@ -10,6 +10,7 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
+    "bootstrap": "^5.0.1",
     "husky": "^4.3.8",
     "turbolinks": "^5.2.0"
   },
