@@ -2,6 +2,7 @@
 
 ## deploy
 * Swap all instances of `createrailsapp` with you app name
+* Delete the migrations for the non DB model examples.
 * create new masterkey
 * run `cap staging deploy` (to create project folders etc)
 * create log folder on server `~/projects/applicationnane/shared/log/`
@@ -28,3 +29,5 @@
   it will not be passed through the validation check in the controller.
 * Non DB Model
   * A modular component that allows the creation of models that behave like database / Active Record models without being saved to the database.  The non DB models have the advantage over other functionalities like `Enum` that it allows you to define additional methods on class itself. Use case is illustrated with an `ExampleType` class, that takes an identifier in snake case. In this case, the name method allows us to change the view display within the class by defining the `name` method.
+* Rufus and Sucker Punch
+  * These gems are included for easier in app job scheduling. Essential and ideal when there is no need for separate threaded job runners that need to be run outside of the rails app like `Sidekiq` and `Resque`.

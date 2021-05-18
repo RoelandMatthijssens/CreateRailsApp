@@ -49,8 +49,11 @@ group :development, :test do
   gem 'rspec-parameterized'
   gem 'rspec-rails'
   gem 'rubocop'
+  gem 'rufus-scheduler', '~> 3.2'
   gem 'shoulda'
   gem 'shoulda-matchers'
+  gem 'sucker_punch'
+  gem 'sucker_punch-backgroundable'
 end
 
 group :development do
