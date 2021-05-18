@@ -2,6 +2,7 @@
 
 ## deploy
 * Swap all instances of `createrailsapp` with you app name
+* Delete the migrations for the non DB model examples.
 * create new masterkey
 * run `cap staging deploy` (to create project folders etc)
 * create log folder on server `~/projects/applicationnane/shared/log/`
