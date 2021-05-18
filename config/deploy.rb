@@ -1,6 +1,6 @@
 require File.expand_path('./environment', __dir__)
 
-lock '~> 3.14.1'
+lock '~> 3.16.0'
 
 set :application, 'createRailsApp'
 set :repo_url, 'git@github.com:RoelandMatthijssens/createRailsApp.git'
