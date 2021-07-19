@@ -2,8 +2,8 @@ set :user, "ubuntu"
 server "134.122.86.168", user: "#{fetch(:user)}", roles: %w{app db web}
 set :keep_releases, 1
 
-set :deploy_to, "/home/#{fetch(:user)}/projects/#{fetch(:application)}"
-set :puma_conf, "/home/#{fetch(:user)}/projects/#{fetch(:application)}/shared/config/puma.rb"
+set :deploy_to, "/home/#{fetch(:user)}/projects/#{fetch(:application)}/#{fetch(:stage)}"
+set :puma_conf, "/home/#{fetch(:user)}/projects/#{fetch(:application)}/#{fetch(:stage)}/shared/config/puma.rb"
 
 set :pg_without_sudo, false
 set :pg_database, Rails.application.credentials.staging[:db_name]

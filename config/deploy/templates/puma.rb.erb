@@ -1,6 +1,6 @@
 #!/usr/bin/env puma
 
-directory '/home/ubuntu/projects/<%= fetch(:application) %>/'
+directory '/home/ubuntu/projects/<%= fetch(:application) %>/<%= fetch(:stage) %>/'
 rackup "<%=fetch(:puma_rackup)%>"
 environment '<%= fetch(:puma_env) %>'
 <% if fetch(:puma_tag) %>
