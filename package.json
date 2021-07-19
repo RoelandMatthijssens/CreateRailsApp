@@ -3,7 +3,10 @@
   "private": true,
   "scripts": {
     "postinstall": "husky-run install",
-    "lint": "bundle exec rubocop -P"
+    "lint": "bundle exec rubocop -P",
+    "test": "bundle exec rspec",
+    "pre-commit": "yarn lint && yarn test"
+
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
@@ -12,7 +15,8 @@
     "@rails/webpacker": "4.3.0",
     "bootstrap": "^5.0.1",
     "husky": "^4.3.8",
-    "turbolinks": "^5.2.0"
+    "turbolinks": "^5.2.0",
+    "@popperjs/core": "^2.9.2"
   },
   "husky": {
     "hooks": {
