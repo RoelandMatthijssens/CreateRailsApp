@@ -52,6 +52,8 @@ group :development, :test do
   gem 'rspec-parameterized'
   gem 'rspec-rails'
   gem 'rubocop'
+  gem 'rubocop-rails'
+  gem 'rubocop-rspec'
   gem 'shoulda'
   gem 'shoulda-matchers'
 end
