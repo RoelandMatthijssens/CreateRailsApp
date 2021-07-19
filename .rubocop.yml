@@ -1,17 +1,31 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
 Layout/LineLength:
   Max: 120
 Metrics/BlockLength:
   Max: 30
   Exclude:
     - 'spec/**/*_spec.rb'
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/DocumentDynamicEvalDefinition:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Max: 6
 Metrics/ClassLength:
-  Max: 30
+  Max: 100
+RSpec/ExampleLength:
+  Max: 20
 Metrics/MethodLength:
   Max: 20
 Metrics/AbcSize:
   Max: 32
 Style/Documentation:
   Enabled: false
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
 
 AllCops:
   NewCops: enable
