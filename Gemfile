@@ -39,7 +39,7 @@ group :development, :test do
   gem 'bcrypt_pbkdf'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capistrano'
-  gem 'capistrano3-puma'
+  gem 'capistrano3-puma', '4.0.0'
   gem 'capistrano-bundler'
   gem 'capistrano-postgresql'
   gem 'capistrano-rails'
